@@ -899,33 +899,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 **Happy Gauging! 🎯**
 
----
-# SpeedoMeter-WorkingCode
-
-## Overview
-This project is designed to provide a functional speedometer application that can be used in various contexts. It showcases the implementation of speed measurement and display functionalities.
-
-## Features
-- Real-time speed tracking
-- User-friendly interface
-- Compatibility with multiple devices
-
-## Installation
-To install the SpeedoMeter application, follow these steps:
-1. Clone the repository: 
-   git clone https://github.com/yourusername/SpeedoMeter-WorkingCode.git
-2. Navigate to the project directory:
-   cd SpeedoMeter-WorkingCode
-3. Install the required dependencies:
-   npm install
-
-## Usage
-To run the application, use the following command:
-npm start
-This will launch the speedometer interface in your default web browser.
-
 ## Acknowledgments
 We would like to thank all contributors and users for their support and feedback.
+Thank you for your contributions to the SpeedoMeter project!
 
-# README SAVED SUCCESSFULLY
-This document has been updated and saved successfully. Thank you for your contributions to the SpeedoMeter project!
+develope by -- 0xz.0nfirex(COxRIPMIZO).
