@@ -1,6 +1,6 @@
-﻿namespace SpeedoMeter
+namespace SpeedoMeter
 {
-    partial class Form1
+    partial class FrmDemo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDemo));
             this.speedometerControl1 = new SpeedoMeter.SpeedometerControl();
             this.SuspendLayout();
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // speedometerControl1
             // 
@@ -45,7 +39,7 @@
             this.speedometerControl1.BezelColor1 = System.Drawing.Color.White;
             this.speedometerControl1.BezelColor2 = System.Drawing.Color.White;
             this.speedometerControl1.BezelHighlightColor = System.Drawing.Color.White;
-            this.speedometerControl1.BezelShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.speedometerControl1.BezelShadowColor = System.Drawing.Color.White;
             this.speedometerControl1.BezelWidthMultiplier = 0.08F;
             this.speedometerControl1.BlockyNeedleWidthMultiplier = 0.1F;
             this.speedometerControl1.ClassicNeedleBaseWidthMultiplier = 0.15F;
@@ -54,24 +48,23 @@
             this.speedometerControl1.DialColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.speedometerControl1.DialPadding = 1F;
             this.speedometerControl1.DualLineGapMultiplier = 0.02F;
-            this.speedometerControl1.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.speedometerControl1.GaugePadding = 10;
             this.speedometerControl1.GlassEffectCenterColor = System.Drawing.Color.Transparent;
             this.speedometerControl1.GlassEffectOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.speedometerControl1.GlassEffectRect = ((System.Drawing.RectangleF)(resources.GetObject("speedometerControl1.GlassEffectRect")));
-            this.speedometerControl1.HubColor1 = System.Drawing.Color.Black;
-            this.speedometerControl1.HubColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.speedometerControl1.HubColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.speedometerControl1.HubColor2 = System.Drawing.Color.Transparent;
             this.speedometerControl1.HubHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.speedometerControl1.HubMinSize = 10F;
+            this.speedometerControl1.HubMinSize = 12F;
             this.speedometerControl1.HubShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.speedometerControl1.HubSizeMultiplier = 0.13F;
+            this.speedometerControl1.HubSizeMultiplier = 0.12F;
             this.speedometerControl1.IndicatorHubColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.speedometerControl1.IndicatorHubHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.speedometerControl1.IndicatorTipLengthMultiplier = 0.1F;
             this.speedometerControl1.IndicatorTipWidthMultiplier = 0.05F;
             this.speedometerControl1.InnerShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.speedometerControl1.KiteTailSizeMultiplier = 0.1F;
-            this.speedometerControl1.Location = new System.Drawing.Point(238, 31);
+            this.speedometerControl1.Location = new System.Drawing.Point(324, 75);
             this.speedometerControl1.MajorTickColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.speedometerControl1.MajorTickLengthMultiplier = 0.09F;
             this.speedometerControl1.MajorTickStep = 50;
@@ -105,12 +98,12 @@
             this.speedometerControl1.OuterShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.speedometerControl1.ScaleStartAngle = 135F;
             this.speedometerControl1.ScaleSweepAngle = 270F;
-            this.speedometerControl1.Size = new System.Drawing.Size(668, 589);
+            this.speedometerControl1.Size = new System.Drawing.Size(340, 340);
             this.speedometerControl1.TabIndex = 0;
             this.speedometerControl1.TextShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.speedometerControl1.TickLabelColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.speedometerControl1.TickLabelFontFamily = "Calibri";
-            this.speedometerControl1.TickLabelFontSizeMultiplier = 0.07F;
+            this.speedometerControl1.TickLabelFontFamily = "Segoe UI";
+            this.speedometerControl1.TickLabelFontSizeMultiplier = 0.05F;
             this.speedometerControl1.TickLabelMinFontSize = 10F;
             this.speedometerControl1.TickLabelSpacing = 7F;
             this.speedometerControl1.TickZonePadding = 5F;
@@ -119,7 +112,7 @@
             this.speedometerControl1.UnitMinFontSize = 10F;
             this.speedometerControl1.UnitTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.speedometerControl1.Value = 0F;
-            this.speedometerControl1.ValueFontFamily = "Calibri";
+            this.speedometerControl1.ValueFontFamily = "Segoe UI";
             this.speedometerControl1.ValueFontSizeMultiplier = 0.1F;
             this.speedometerControl1.ValueMinFontSize = 18F;
             this.speedometerControl1.ValuePosition = ((System.Drawing.PointF)(resources.GetObject("speedometerControl1.ValuePosition")));
@@ -133,23 +126,20 @@
             this.speedometerControl1.ZoneThicknessMultiplier = 0.02F;
             this.speedometerControl1.ZoneYellowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
             // 
-            // Form1
+            // FrmDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1223, 660);
+            this.ClientSize = new System.Drawing.Size(1245, 768);
             this.Controls.Add(this.speedometerControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "FrmDemo";
+            this.Text = "FrmDemo";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
+
         private SpeedometerControl speedometerControl1;
     }
 }
-

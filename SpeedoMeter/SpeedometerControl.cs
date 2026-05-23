@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -248,7 +248,8 @@ namespace SpeedoMeter
 
             var bounds = ClientRectangle;
             int size = Math.Min(bounds.Width, bounds.Height) - GaugePadding * 2;
-            if (size <= 8) return;
+            if (size <= 8)
+                return;
             int left = bounds.Left + (bounds.Width - size) / 2;
             int top = bounds.Top + (bounds.Height - size) / 2;
             var dialRect = new Rectangle(left, top, size, size);
@@ -299,34 +300,85 @@ namespace SpeedoMeter
         {
             switch (NeedleStyle)
             {
-                case NeedleStyle.ModernIndicator: DrawNeedle_ModernIndicator(g, rect); break;
+                case NeedleStyle.ModernIndicator:
+                    DrawNeedle_ModernIndicator(g, rect);
+                    break;
                 //case NeedleStyle.ModernBlocky: DrawNeedle_ModernBlocky(g, rect); break;
-                case NeedleStyle.ClassicTapered: DrawNeedle_ClassicTapered(g, rect); break;
-                case NeedleStyle.ClassicWide: DrawNeedle_ClassicWide(g, rect); break;
-                case NeedleStyle.OrnateDiamond: DrawNeedle_OrnateDiamond(g, rect); break;
+                case NeedleStyle.ClassicTapered:
+                    DrawNeedle_ClassicTapered(g, rect);
+                    break;
+                case NeedleStyle.ClassicWide:
+                    DrawNeedle_ClassicWide(g, rect);
+                    break;
+                case NeedleStyle.OrnateDiamond:
+                    DrawNeedle_OrnateDiamond(g, rect);
+                    break;
                 //case NeedleStyle.OrnateCircleTail: DrawNeedle_OrnateCircleTail(g, rect); break;
-                case NeedleStyle.ModernSleek: DrawNeedle_ModernSleek(g, rect); break;
-                case NeedleStyle.ModernCutout: DrawNeedle_ModernCutout(g, rect); break;
-                case NeedleStyle.ModernDualLine: DrawNeedle_ModernDualLine(g, rect); break;
-                case NeedleStyle.Arrowhead: DrawNeedle_Arrowhead(g, rect); break;
-                case NeedleStyle.Broadhead: DrawNeedle_Broadhead(g, rect); break;
-                case NeedleStyle.CrossbowBolt: DrawNeedle_CrossbowBolt(g, rect); break;
-                case NeedleStyle.VintageThinWithTail: DrawNeedle_VintageThinWithTail(g, rect); break;
-                case NeedleStyle.VintageArtDeco: DrawNeedle_VintageArtDeco(g, rect); break;
-                case NeedleStyle.VintageCrescentTail: DrawNeedle_VintageCrescentTail(g, rect); break;
-                case NeedleStyle.VintageAviator: DrawNeedle_VintageAviator(g, rect); break;
-                case NeedleStyle.OrnateSpearTip: DrawNeedle_OrnateSpearTip(g, rect); break;
-                case NeedleStyle.OrnateFleurDeLis: DrawNeedle_OrnateFleurDeLis(g, rect); break;
-                case NeedleStyle.OrnateSword: DrawNeedle_OrnateSword(g, rect); break;
-                case NeedleStyle.CompassNorth: DrawNeedle_CompassNorth(g, rect); break;
-                case NeedleStyle.AnchorTail: DrawNeedle_AnchorTail(g, rect); break;
-                case NeedleStyle.Harpoon: DrawNeedle_Harpoon(g, rect); break;
-                case NeedleStyle.SciFiArrow: DrawNeedle_SciFiArrow(g, rect); break;
-                case NeedleStyle.SciFiDataSpike: DrawNeedle_SciFiDataSpike(g, rect); break;
-                case NeedleStyle.EnergyBlade: DrawNeedle_EnergyBlade(g, rect); break;
-                case NeedleStyle.SimplePin: DrawNeedle_SimplePin(g, rect); break;
+                case NeedleStyle.ModernSleek:
+                    DrawNeedle_ModernSleek(g, rect);
+                    break;
+                case NeedleStyle.ModernCutout:
+                    DrawNeedle_ModernCutout(g, rect);
+                    break;
+                case NeedleStyle.ModernDualLine:
+                    DrawNeedle_ModernDualLine(g, rect);
+                    break;
+                case NeedleStyle.Arrowhead:
+                    DrawNeedle_Arrowhead(g, rect);
+                    break;
+                case NeedleStyle.Broadhead:
+                    DrawNeedle_Broadhead(g, rect);
+                    break;
+                case NeedleStyle.CrossbowBolt:
+                    DrawNeedle_CrossbowBolt(g, rect);
+                    break;
+                case NeedleStyle.VintageThinWithTail:
+                    DrawNeedle_VintageThinWithTail(g, rect);
+                    break;
+                case NeedleStyle.VintageArtDeco:
+                    DrawNeedle_VintageArtDeco(g, rect);
+                    break;
+                case NeedleStyle.VintageCrescentTail:
+                    DrawNeedle_VintageCrescentTail(g, rect);
+                    break;
+                case NeedleStyle.VintageAviator:
+                    DrawNeedle_VintageAviator(g, rect);
+                    break;
+                case NeedleStyle.OrnateSpearTip:
+                    DrawNeedle_OrnateSpearTip(g, rect);
+                    break;
+                case NeedleStyle.OrnateFleurDeLis:
+                    DrawNeedle_OrnateFleurDeLis(g, rect);
+                    break;
+                case NeedleStyle.OrnateSword:
+                    DrawNeedle_OrnateSword(g, rect);
+                    break;
+                case NeedleStyle.CompassNorth:
+                    DrawNeedle_CompassNorth(g, rect);
+                    break;
+                case NeedleStyle.AnchorTail:
+                    DrawNeedle_AnchorTail(g, rect);
+                    break;
+                case NeedleStyle.Harpoon:
+                    DrawNeedle_Harpoon(g, rect);
+                    break;
+                case NeedleStyle.SciFiArrow:
+                    DrawNeedle_SciFiArrow(g, rect);
+                    break;
+                case NeedleStyle.SciFiDataSpike:
+                    DrawNeedle_SciFiDataSpike(g, rect);
+                    break;
+                case NeedleStyle.EnergyBlade:
+                    DrawNeedle_EnergyBlade(g, rect);
+                    break;
+                case NeedleStyle.SimplePin:
+                    DrawNeedle_SimplePin(g, rect);
+                    break;
                 //case NeedleStyle.KiteTail: DrawNeedle_KiteTail(g, rect); break;
-                case NeedleStyle.ModernThin: default: DrawNeedle_ModernThin(g, rect); break;
+                case NeedleStyle.ModernThin:
+                default:
+                    DrawNeedle_ModernThin(g, rect);
+                    break;
             }
         }
         private void DrawNeedleShadowAndFill(Graphics g, GraphicsPath path, float angle, float radius) { using (var sp = (GraphicsPath)path.Clone()) { var m = new Matrix(); m.Translate(radius * NeedleShadowOffsetMultiplier, radius * NeedleShadowOffsetMultiplier); sp.Transform(m); using (var sb = new SolidBrush(NeedleShadowColor)) g.FillPath(sb, sp); } using (var b = new LinearGradientBrush(path.GetBounds(), Color.FromArgb(NeedleTransparency, NeedleColor1), Color.FromArgb(NeedleTransparency, NeedleColor2), angle + 90)) g.FillPath(b, path); }
